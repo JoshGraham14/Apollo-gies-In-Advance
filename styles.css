@@ -45,6 +45,7 @@ header h2 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 1em;
 }
 
 .assignments-container {
@@ -68,10 +69,15 @@ header h2 {
 .assignment-card:hover {
 	cursor: pointer;
 	border: solid var(--color-blue-accent) 0.3em;
+	transition: all 0.1s ease-in-out;
+}
+
+.assignment-card:hover .card-heading {
+	font-size: 2.4em;
 }
 
 .card-heading {
-	font-size: 1.9rem;
+	font-size: 2rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -97,6 +103,7 @@ header h2 {
 	align-items: center;
 	width: 80%;
 	gap: 1em;
+	margin-bottom: 1em;
 }
 
 .member-cards {
@@ -113,4 +120,8 @@ header h2 {
 	justify-content: center;
 	align-items: center;
 	width: 50ch;
+}
+
+.documentation {
+	margin-bottom: 2em;
 }
