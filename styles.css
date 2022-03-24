@@ -11,7 +11,13 @@
 	--color-blue-accent: rgb(13, 178, 243);
 }
 
+html,
 body {
+	overflow-x: hidden;
+}
+
+body {
+	position: relative;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -46,6 +52,7 @@ header h2 {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 1em;
+	gap: 1em;
 }
 
 .assignments-container {
@@ -124,4 +131,20 @@ header h2 {
 
 .documentation {
 	margin-bottom: 2em;
+}
+
+.documentation h1 {
+	text-align: center;
+}
+
+/* Media query for phone screens */
+@media only screen and (max-width: 600px) {
+	.intro {
+		width: 80%;
+		font-size: 1.2rem;
+	}
+
+	.documentation ul {
+		margin-left: 2em;
+	}
 }
