@@ -71,6 +71,7 @@ header h2 {
 	position: relative;
 	border: solid black 0.3em;
 	overflow: hidden;
+	border-radius: 1em;
 }
 
 .assignment-card:hover {
